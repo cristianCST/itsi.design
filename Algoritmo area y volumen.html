@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+        <meta charset="utf-8">
+		<TITLE>AREA_VOLUMEN_CILINDRO</TITLE>
+	</HEAD>
+	<BODY onload="area_volumen_cilindro();">
+		<SCRIPT type="text/javascript">
+			//Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
+			//Es posible que el codigo generado no sea completamente correcto. Si encuentra
+			//errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+
+			// *****************************************************
+			// INSTITUTO SUPERIOR IBARRA
+			// NIVEL: 1 VESPERTINO "A"
+			// ALUMNO: CRISTIAN CHAMORRO
+			// FECHA:02-12-2019
+			// OBJETIVO: ALGORITMO QUE CALCULE AREA Y VOLUMEN CILINDRO
+			// *****************************************************
+			function area_volumen_cilindro() {
+				document.write("calculo area y volumen cilindro",'<BR/>');
+				var a = new Number();
+				var v = new Number();
+				var h = new Number();
+				var r = new Number();
+				var p = new Number();
+				document.write("digite r:");
+				r = Number(prompt());
+				document.write("digite h");
+				h = Number(prompt());
+				p = 3.1416;
+				a = (2*(p*Math.pow(r,2)))+((2*p*r)*h);
+				v = (p*Math.pow(r,2))*h;
+				document.write("***RESULTADOS***",'<BR/>');
+				document.write("area=",a,'<BR/>');
+				document.write("volumen=",v,'<BR/>');
+			}
+			
+		</SCRIPT>
+	</BODY>
+</HTML>
